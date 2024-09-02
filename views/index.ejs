@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatroom</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header>
+      <form id="joinRoomForm">
+        <input id="username" type="text" placeholder="Your name" required />
+        <input id="roomname" type="text" placeholder="Chat room" required />
+        <button type="submit" id="joinRoomButton">Join</button>
+      </form>
+    </header>
+    <div id="main-content">
+      <div id="messages-container">
+        <div id="welcome">
+          <p>Welcome to Chat App!</p>
+        </div>
+        <div id="messages"></div>
+      </div>
+    </div>
+    <div id="user-info">
+      <span class="info-label">Users in <span id="currentRoomName">Room</span>:</span>
+      <span id="usersInRoom" class="info-value"></span>
+    </div>
+    <div id="active-rooms">
+      <span class="info-label">Active rooms:</span>
+      <span id="roomList" class="info-value"></span>
+    </div>
+    <div id="typingNotification" style="color: rgb(255, 255, 255); font-style: italic;"></div>
+    <form id="form">
+      <input id="input" autocomplete="off" placeholder="Your message" />
+      <button type="submit" id="sendButton">Send</button>
+      <div id="error-message" style="color: red; display: none;">Please enter a message</div>
+    </form>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/chat.js"></script>
+</body>
+</html>

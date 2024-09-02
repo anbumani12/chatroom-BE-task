@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header #username,
+header #roomname {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  width: 215px;
+}
+
+#joinRoomButton {
+  background-color: #e4e4e4;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 100px;
+  font-size: 16px;
+}
+
+#main-content {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background: rgb(53, 52, 52);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+#messages-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#messages p {
+  padding: 8px;
+  margin-bottom: 5px;
+  background: #e4e4e4;
+  border-radius: 7px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#welcome p {
+  padding: 8px;
+  margin-bottom: 5px;
+  background: #e4e4e4;
+  border-radius: 7px;
+  color: black;
+}
+
+#joinRoomForm {
+  display: flex;
+  margin-top: 10px;
+}
+
+#input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-right: 10px;
+  width: 460px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+#sendButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e4e4e4;
+  color: rgb(0, 0, 0);
+  border-radius: 7px;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.info {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#user-info,
+#active-rooms,
+#typingNotification {
+  color: #ffffff;
+  padding: 10px;
+  background: #000000;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+#user-info,
+#active-rooms {
+  min-height: 10px;
+}
+
+#typingNotification {
+  min-height: 10px;
+}
+
+.info-label {
+  color: white;
+  font-size: 14px;
+}
+
+.info-value {
+  font-size: 14px;
+}
+
+#welcome {
+  color: white;
+  margin: 10px 0;
+}
